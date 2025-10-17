@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Marvel Studios</title>
+  <style>
+    body {
+      background-color: #bfd6d1;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 16px rgba(0, 0, 0, 0.2);
+      max-width: 800px;
+      text-align: center;
+    }
+
+    h1 {
+      color: red;
+      font-size: 40px;
+      background-color: white;
+      padding: 10px;
+    }
+
+    h2 {
+      color: green;
+      font-family: cursive;
+      font-size: 30px;
+      background-color: white;
+      padding: 8px;
+    }
+
+    .thor {
+      color: blue;
+      font-size: 25px;
+    }
+
+    .button1 {
+      background-color: green;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      text-decoration: none;
+      display: inline-block;
+      cursor: pointer;
+    }
+
+    table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      padding: 8px;
+    }
+
+    .top {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 id="demo"><u>Samantha</u></h1>
+    <h2 id="lego"><b>My superhero journey</b></h2>
+
+    <p class="thor">I was 12 when I was <strong>bitten</strong> by a <i>radioactive fly</i>.</p>
+
+    <br>
+
+    <button type="button" onclick="makeTextLarge()">
+      Make h2 large
+    </button>
+
+    <br>
+    <br>
+
+    <button type="button" onclick="makeTextSmall()">
+      Make h2 small
+    </button>
+
+    <br><br>
+
+    <p class="loki">And my life has never been the same again.</p>
+
+    <h3>My super powers</h3>
+    <ol>
+      <li>Flying</li>
+      <li>Super vision</li>
+      <li>Super speed</li>
+    </ol>
+
+    <br>
+
+    <a href="https://www.canva.com/" class="button1" target="_blank">Check this out</a>
+
+    <br><br>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Monday</th>
+          <th>Wednesday</th>
+          <th>Friday</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Football</td>
+          <td>Volleyball</td>
+          <td>Table Tennis</td>
+        </tr>
+        <tr>
+          <td>Jump Rope</td>
+          <td>Oware</td>
+          <td>Driving</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d88415.28755651352!2d-0.12206038619913259!3d5.623857890678592!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfdf9b1fff72b87d%3A0xff2fe8ba5dfa0561!2sKotoka%20International%20Airport%20-%20Accra!5e1!3m2!1sen!2sgh!4v1760526267419!5m2!1sen!2sgh"
+      width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    <br><br>
+
+    <h4>My favourite video</h4>
+    <iframe width="560" height="315"
+      src="https://www.youtube.com/embed/Pqd27aMlVvw?si=mcxTKJE4gUwxD_3m"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <br><br>
+
+    <h4>S+S video</h4>
+    <video width="300px" controls>
+      <source src="Movie on 07-11-2023 at 7.49 PM.mov" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <br><br>
+
+    <h4>Music</h4>
+    <audio controls>
+      <source src="DANCE MUSIC - 3squared.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+
+    <br><br>
+
+    <button type="button" onclick="document.getElementById('ant').innerHTML = Date()">
+      Click me
+    </button>
+
+    <br><br>
+
+    <button type="button" onclick="document.getElementById('demo').style.backgroundColor = 'blue';">
+      Click me to change the h1 background colour
+    </button>
+
+    <br><br>
+
+    <p id="ant"></p>
+  </div>
+
+  <script>
+  	function makeTextLarge() {
+  		document.getElementById('lego').style.fontSize = '50px';
+  	}
+
+  	function makeTextSmall() {
+  		document.getElementById('lego').style.fontSize = '10px';
+  	}
+
+  </script>
+</body>
+</html>
